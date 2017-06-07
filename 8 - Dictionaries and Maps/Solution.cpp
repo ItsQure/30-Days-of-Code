@@ -18,14 +18,17 @@ int main() {
         }
     }
 
-    for (int i = 0; i < N; i++) {
+    while(1) {
         string name;
         cin >> name;
-
-        if (phone_book[name]) {
-            cout << name << "=" << phone_book[name] << endl;
-        } else {
-            cout << "Not found" << endl;
+        if(name!=""){
+            if (phone_book[name]) {
+                cout << name << "=" << phone_book[name] << endl;
+            } else {
+                cout << "Not found" << endl;
+            }
+        } else{
+            break;
         }
     }
 
